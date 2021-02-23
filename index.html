@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="content">
+        <h2>The output of even numbers</h2>
+        <input type="number" id="first_input">
+        <input type="number" id="second_input">
+        <button onclick="showNumbers()" id="button_one">Show even numebrs</button>
+        <div class="output_one" id="output"></div>
+    </div>
+    <div class="content" style="margin-top: 0;">
+        <h2>The output of odd numbers</h2>
+        <input type="number" id="third_input">
+        <input type="number" id="fourth_input">
+        <button onclick="showNumbersTwo()" id="button_two">Show odd numebrs</button>
+        <div class="output_two" id="output_two"></div>
+    </div>
+
+    <script>
+
+        function showNumbers() {
+            let first_number = document.getElementById('first_input').value
+            let second_number = document.getElementById('second_input').value
+
+            let allNumbers = ""
+            for (let i = first_number; i <= second_number; i++) {
+                if (i % 2 == 0) {
+                    allNumbers = allNumbers + '<div>' + i + '</div>' 
+                }
+            }
+            document.getElementById('output').innerHTML = allNumbers
+        }
+        
+        function showNumbersTwo() {
+            let third_number = document.getElementById('third_input').value
+            let fourth_number = document.getElementById('fourth_input').value
+
+            let allNumbersTwo = ""
+            for (let x = third_number; x <= fourth_number; x++) {
+                if (x % 2 != 0) {
+                    allNumbersTwo = allNumbersTwo + '<div>' + x + '</div>' 
+                }
+            }
+            document.getElementById('output_two').innerHTML = allNumbersTwo
+        }
+
+    </script>
+
+</body>
+</html>

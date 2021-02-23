@@ -1,0 +1,48 @@
+.content{
+    margin: 50px 50px 0;
+}
+
+.content .output_one{
+    margin-top: 20px;
+}
+.content .output_one div{
+    display: inline-block;
+    background-color: #000;
+    color: rgb(223, 145, 0);
+    padding: 8px 15px;
+    margin: 0 5px 10px 0;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+
+.content input{
+    padding: 5px;
+    outline: 0;
+}
+.content button{
+    padding: 5px;
+    cursor: pointer;
+}
+.content textarea{
+    display: block;
+    margin-top: 5px;
+    outline: 0;
+}
+
+
+
+
+
+.content .output_two{
+    margin-top: 20px;
+}
+.content .output_two div{
+    display: inline-block;
+    color: #000;
+    background-color: rgb(223, 145, 0);
+    padding: 8px 15px;
+    margin: 0 5px 10px 0;
+    font-weight: 700;
+    border-radius: 5px;
+}
